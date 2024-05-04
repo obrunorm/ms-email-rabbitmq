@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "d3de296d-51ad-1db8-8fcc-7ede4616ea85",
+		"name": "ms-email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17174589"
+	},
+	"item": [
+		{
+			"name": "send-email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ownerRef\": \"Author\",\n    \"emailFrom\": \"*********@gmail.com\",\n    \"emailTo\": \"*********@gmail.com\",\n    \"subject\": \"Teste\",\n    \"text\": \"Olá, estou enviando esse email para testar meu microserviço novo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sending-email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sending-email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
